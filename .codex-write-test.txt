@@ -1,0 +1,3 @@
+OTMELIO GitHub write test
+Status: PASS
+Purpose: Verify ChatGPT Codex Connector write access safely on an isolated branch.
