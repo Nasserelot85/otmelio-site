@@ -1,0 +1,12 @@
+{
+  "name": "otmelio-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static OTMELIO storefront deployed with GitHub Pages",
+  "scripts": {
+    "test": "node scripts/validate-site.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
