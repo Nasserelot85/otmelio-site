@@ -1,5 +1,15 @@
 document.getElementById("year").textContent=new Date().getFullYear();
 
+// Official OTMELIO brand identity: midnight-blue O with champagne-gold sweep and star.
+const officialBrandStyle=document.createElement("style");
+officialBrandStyle.textContent=`
+.brand-mark,.hero-logo svg{display:none!important}
+.brand::before{content:"";width:42px;height:42px;flex:0 0 42px;background:url("/otmelio-mark.svg") center/contain no-repeat!important;border-radius:0!important}
+.hero-logo{width:230px!important;height:230px;background:url("/otmelio-mark.svg") center/contain no-repeat!important}
+.footer-brand::before{filter:brightness(0) invert(1);opacity:.96}
+`;
+document.head.appendChild(officialBrandStyle);
+
 // Complete the Product JSON-LD with a crawlable product image and item condition.
 // Google renders JavaScript-generated Product structured data before rich-result extraction.
 const productStructuredData=document.querySelector('script[type="application/ld+json"]');
